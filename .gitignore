@@ -1,0 +1,27 @@
+runs/
+outputs/
+tmp/
+node_modules/
+工作区/
+
+# 本地业务输入、客户资料和人工样例不进入代码仓库。
+01_职责原文/
+02_系统资料/
+04_人工梳理样例/
+03_规范文件/*.docx
+处室板块视角两清一图梳理.pdf
+
+# 早期一次性原型；正式流程使用 run_stage1/2/3 与
+# run_full_delivery_package.mjs。
+tools/build_first_draft.py
+tools/create_first_draft_workbook.mjs
+
+.env
+.env.*
+!.env.example
+*.log
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+~$*

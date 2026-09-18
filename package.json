@@ -1,0 +1,17 @@
+{
+  "name": "liangqingyitu-pipeline",
+  "version": "0.1.0",
+  "private": true,
+  "description": "两清一图数据治理自动化流水线",
+  "type": "module",
+  "engines": {
+    "node": ">=22"
+  },
+  "scripts": {
+    "check": "node --check tools/run_stage1_matter_decomposition.mjs && node --check tools/retrieve_stage2_context.mjs && node --check tools/run_stage2_prompt_analysis.mjs && node --check tools/run_stage2_digital_process.mjs && node --check tools/run_stage3_swimlane.mjs && node --check tools/run_full_delivery_package.mjs"
+  },
+  "dependencies": {
+    "@oai/artifact-tool": "2.8.59",
+    "sharp": "0.35.4"
+  }
+}
